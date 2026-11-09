@@ -1,4 +1,44 @@
+/* geral */
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10vh 80vh 10vh;
+}
+
+header {
+    background-color: green;
+    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px 20px 30px 20px;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color: red;
+}
+
+footer {
+    background-color: blue;
+}
+
 /* home */
+
 /* tribos */
+
 /* aba de culinaria */
+
 /* pontos turisticos */
