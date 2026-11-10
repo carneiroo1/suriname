@@ -11,10 +11,11 @@ body {
 header {
     background-color: green;
     position: sticky;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     padding: 10px 20px 30px 20px;
+    display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 20vw;
 }
 
 header ul {
@@ -25,6 +26,10 @@ header ul {
 header a {
     text-decoration: none;
     color: black;
+}
+
+#band-sur {
+    width: 7rem;
 }
 
 main {
