@@ -38,6 +38,9 @@ header a {
     width: 7rem;
 }
 
+menu {
+    display: none;
+}
 main {
     background-color: #f5f5f5;
     display: flex;
@@ -54,12 +57,12 @@ h2{
     display: inline-block;
     
 }
-div {
-    background-color: brown;
-    border-radius: 25px;
-    border: 10px solid black;
-    margin-top: 30px;
-    margin-bottom: 20px;
+.card {
+     width:300px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
     
 }
 .container-tribos{
@@ -68,9 +71,9 @@ div {
     gap:30px;
     flex-wrap:wrap;
 }
-img{
+.img-tribos{
     border-radius: 25px;
-}
+};
 /* aba de culinaria */
 
 /* pontos turisticos */
