@@ -47,27 +47,34 @@ main {
 }
 
 footer {
-    background-color: blue;
+     background: linear-gradient(
+  90deg,
+  #1B5E20 0%,
+  #2E7D32 35%,
+  #C62828 70%,
+  #FBC02D 100%)
 }
 
 /* home */
 
 /* tribos */
 h2{
-    display: inline-block;
+    display: flex;
     
 }
 .card {
      width:300px;
     background:white;
+    display: flex;
     border-radius:20px;
-    overflow:hidden;
     box-shadow:0 4px 12px rgba(0,0,0,.2);
-    
+    align-items: center;
+    flex-direction: column;
 }
 .container-tribos{
     display:flex;
     justify-content:center;
+    align-items: center;
     gap:30px;
     flex-wrap:wrap;
 }
