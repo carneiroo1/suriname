@@ -5,4 +5,25 @@
     menu {
         display: inline-block;
     }
+
+    #menu-nav {
+        border-bottom: 10px;
+        border-color: black;
+        ul {
+            padding: 10px 40px 10px 40px;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid gray;
+            box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.3);
+        }
+        a {
+            color: black;
+            font-size: 30px;
+        }
+    }
+    .escondido {
+        display: none;
+    }
 }

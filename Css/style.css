@@ -42,6 +42,10 @@ menu {
     display: none;
 }
 
+#menu-nav {
+    display: none;
+}
+
 #burger-menu-icon {
     width: 6rem;
 }
