@@ -86,12 +86,13 @@ footer {
 }
 
 .card {
-    width: 350px;
+      width: 350px;
     background: #fff3cd;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 4px 12px #0000;
+    box-shadow: 0 4px 12px #0002;
     border: 2px solid #ddd;
+    display: flex;
     flex-direction: column;
     transition: transform 0.3s;
 }
@@ -108,7 +109,6 @@ footer {
 .img-tribos {
     width: 260px;
     height: 390px;
-    object-fit: cover;
     display: block;
 }
 .card p {
