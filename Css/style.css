@@ -1,6 +1,23 @@
 /* geral */
+
+.roboto-header {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.ubuntu-bold {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
 * {
     margin: 0;
+
 }
 
 header {
@@ -17,17 +34,29 @@ header {
     align-items: center;
     justify-content: space-evenly;
     gap: 20vw;
+    height: 10vh;
 }
 
 header ul {
     display: flex;
     list-style: none;
+    gap: 5rem;
+}
+.texto-aumenta {
+    display: inline-block;
+    transition:  transform 0.3s ease;
+}
+
+.texto-aumenta:hover {
+    transform: scale(1.2);
 }
 
 header a {
     text-decoration: none;
-    color: black;
+    color: white;
+    font-weight: 400;
 }
+
 
 #band-sur {
     width: 7rem;
@@ -45,7 +74,9 @@ menu {
     width: 6rem;
 }
 
-
+main {
+    min-height: 75.8vh;
+}
 
 footer {
     height: 10vh;
