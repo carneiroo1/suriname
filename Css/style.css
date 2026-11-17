@@ -20,6 +20,14 @@
 
 }
 
+#header-div {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 2rem;
+}
+
 header {
     background: linear-gradient(
   90deg,
@@ -28,13 +36,16 @@ header {
   #C62828 70%,
   #FBC02D 100%
 );
-    position: sticky;
-    padding: 10px 20px 30px 20px;
-    display: flex;
+    width: 75%;
+    border-radius: 100px;
+    padding: 10px 20px 10px 20px;
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr;
     align-items: center;
-    justify-content: space-evenly;
-    gap: 20vw;
-    height: 10vh;
+    align-content: center;
+    justify-items: center;
+    gap: 1rem;
+    height: 7vh;
 }
 
 header ul {
@@ -64,6 +75,7 @@ header a {
 
 menu {
     display: none;
+    padding: 0px;
 }
 
 #menu-nav {
