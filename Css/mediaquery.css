@@ -7,6 +7,8 @@
     }
 
     #menu-nav {
+        display: inline-block;
+        width: 100%;
         border-bottom: 10px;
         border-color: black;
         ul {
@@ -20,10 +22,14 @@
         }
         a {
             color: black;
+            text-decoration: none;
             font-size: 30px;
         }
     }
-    .escondido {
+}
+
+@media screen and (max-width: 1600px) {
+    #menu-nav {
         display: none;
     }
 }
