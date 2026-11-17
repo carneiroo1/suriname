@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     top: 2rem;
+    z-index: 1000;
 }
 
 header {
@@ -88,6 +89,25 @@ menu {
 
 main {
     min-height: 75.8vh;
+}
+
+.carrossel {
+    position: relative;
+    width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #1d1d1d;
+}
+
+.carrousel-inner {
+    display: flex;
+    transition: transform 0.5 ease-in-out;
+}
+
+.carrossel-inner img {
+width: 100%;
+display: block;
 }
 
 footer {

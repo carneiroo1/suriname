@@ -17,8 +17,13 @@ function mostrarSlide(){
     const slides = document.querySelectorAll('.carrosel-inner')
     if(passagemdasimagens >= slides.length){
         passagemdasimagens = 0
+    } else if (passagemdasimagens < 0){
+        passagemdasimagens = slides.length - 1;
     }
-    else if {
-        passagemdasimagens 
+    else {
+        passagemdasimagens = index
     }
+    const offset = -passagemdasimagens *100
+    document.getElementById('carrosel-jv').style.transform = `translateX(${offset})`;
+    
 }
