@@ -10,3 +10,15 @@ function alterarmenu() {
         navbar.style.display = "inline-block";
     }
 }
+
+let passagemdasimagens = 0
+
+function mostrarSlide(){
+    const slides = document.querySelectorAll('.carrosel-inner')
+    if(passagemdasimagens >= slides.length){
+        passagemdasimagens = 0
+    }
+    else if {
+        passagemdasimagens 
+    }
+}
