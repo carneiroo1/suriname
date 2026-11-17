@@ -120,8 +120,8 @@ footer {
     background: #fff3cd;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 0 4px 12px #0002;
-    border: 2px solid #ddd;
+    box-shadow: 20px 30px 60px #0002;
+    border: 2px solid #ffffff;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s;
@@ -135,6 +135,24 @@ footer {
     text-align: center;
     font-size: 22px;
     padding: 15px;
+}
+.aruaques {
+    background: green;
+}
+.aruaques h2 {
+    background: green;
+}
+.caraiba {
+    background: blue;
+}
+.caraiba h2 {
+    background: blue;
+}
+.warrius {
+    background: red;
+}
+.warrius h2 {
+    background: red;
 }
 .img-tribos {
     width: 260px;
