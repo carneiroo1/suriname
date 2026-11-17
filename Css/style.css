@@ -120,14 +120,14 @@ footer {
     background: #fff3cd;
     overflow: hidden;
     border-radius: 20px;
-    box-shadow: 20px 30px 60px #0002;
-    border: 2px solid #ffffff;
+    border: 2px solid #fac905;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s;
 }
 .card:hover {
     transform: translateY(-5px);
+    box-shadow: 10px 20px 30px rgb(255, 255, 0);
 }
 .card h2 {
     background:#1B5E20;
@@ -162,6 +162,7 @@ footer {
 .card p {
     margin: 5px;
     font-size: 20px;
+    font-style: bold;
 }
 /* aba de culinaria */
 
