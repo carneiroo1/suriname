@@ -116,9 +116,8 @@ footer {
 }
 
 .card {
-      width: 350px;
+    width: 350px;
     background: #fff3cd;
-    overflow: hidden;
     border-radius: 20px;
     border: 2px solid #fac905;
     display: flex;
@@ -130,11 +129,11 @@ footer {
     box-shadow: 10px 20px 30px rgb(255, 255, 0);
 }
 .card h2 {
-    background:#1B5E20;
     color: #fff;
     text-align: center;
     font-size: 22px;
     padding: 15px;
+    border-radius: 22px;
 }
 .aruaques {
     background: green;
@@ -143,10 +142,10 @@ footer {
     background: green;
 }
 .caraiba {
-    background: blue;
+    background: #FFCD00;
 }
 .caraiba h2 {
-    background: blue;
+    background: #FFCD00;
 }
 .warrius {
     background: red;
