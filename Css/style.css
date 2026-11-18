@@ -121,7 +121,9 @@ footer {
 /* tribos */
 
 #body-tribos {
-    background-image: image-set();
+    background-image: url(/img/Plano\ de\ Fundo\ Tribos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #222;
 
