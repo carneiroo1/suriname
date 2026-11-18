@@ -17,12 +17,13 @@ function sleep(ms) {
 
 async function mudarCarrossel() {
     while(true) {
-        carrossel.src = "https://www.rewild.org/uploads/2025/09/unnamed.png?format=webp&optimize=high&precrop=16%3A9%2Csmart";
+        carrossel.src = "/img/Natureza Suriname-Home.jpg";
         await sleep(2000);
-        carrossel.src = "https://cdn.britannica.com/03/36103-004-E95CD585/village-Maroni-River-Suri-Cottica.jpg?w=400&h=225&c=crop";
+        carrossel.src = "/img/Praia Suriname-Home.jpg";
         await sleep(2000);
-        carrossel.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV_WdYdxvP_2Qtt4xixHY9MS7c-KgSw5D_QGMNGDfTjyaMmkWuM4fpaOMh&s=10";
+        carrossel.src = "/img/Urbano Suriname-Home.jpeg";
         await sleep(2000);
-        carrossel.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_5L050cJF62hgI7ntnhRu6WbQwL5T6vKnfp-s04t65nubSNlnIlr-sdqe&s=10";
+        carrossel.src = "/img/Boas Vindas Suriname-Home.jpg";
+        await sleep(2000);
     }
 }

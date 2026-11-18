@@ -121,8 +121,10 @@ footer {
 /* tribos */
 
 #body-tribos {
+    background-image: image-set();
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #222;
+
 }
 
 #main-tribos {
