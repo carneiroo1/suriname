@@ -303,6 +303,9 @@ footer {
 .card:hover{
 transform: translateY(-5px);
 }
+.card.flip {
+    transform: rotateY(180deg);
+}
 .aruaques {
     background: #2E7D32;
 }
