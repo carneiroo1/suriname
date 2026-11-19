@@ -342,4 +342,536 @@ transform: translateY(-5px);
 }
 /* aba de culinaria */
 
+
+/* =====================================
+   CULINÁRIA - CONFIGURAÇÕES GERAIS
+===================================== */
+
+.culinaria-hero,
+.culinaria-introducao,
+.culinaria-pratos,
+.culinaria-influencias,
+.culinaria-ingredientes,
+.culinaria-bebidas,
+.culinaria-final {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.culinaria-hero *,
+.culinaria-introducao *,
+.culinaria-pratos *,
+.culinaria-influencias *,
+.culinaria-ingredientes *,
+.culinaria-bebidas *,
+.culinaria-final * {
+    box-sizing: border-box;
+}
+
+.culinaria-hero img,
+.culinaria-introducao img,
+.culinaria-pratos img,
+.culinaria-influencias img,
+.culinaria-ingredientes img,
+.culinaria-bebidas img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.culinaria-subtitulo {
+    display: inline-block;
+    color: #b36c45;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.culinaria-titulo-secao {
+    max-width: 680px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.culinaria-titulo-secao h2 {
+    color: #49382d;
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+    margin: 0 0 15px;
+}
+
+.culinaria-titulo-secao p {
+    color: #81766c;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   HERO / APRESENTAÇÃO
+===================================== */
+
+.culinaria-hero {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 10%;
+    background: #f5eee3;
+}
+
+.culinaria-hero-conteudo {
+    flex: 1;
+    max-width: 550px;
+}
+
+.culinaria-hero-conteudo h1 {
+    color: #49382d;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    margin: 10px 0 25px;
+}
+
+.culinaria-hero-conteudo p {
+    color: #81766c;
+    font-size: 1.1rem;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+.culinaria-hero-imagem {
+    flex: 1;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.culinaria-hero-imagem img {
+    transition: transform 0.6s ease;
+}
+
+.culinaria-hero-imagem:hover img {
+    transform: scale(1.05);
+}
+
+.culinaria-botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #a85f3d;
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.culinaria-botao:hover {
+    background: #82472e;
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   INTRODUÇÃO
+===================================== */
+
+.culinaria-introducao {
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    padding: 100px 10%;
+    background: #fffdf9;
+}
+
+.culinaria-introducao-imagem {
+    flex: 1;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.culinaria-introducao-imagem img {
+    transition: transform 0.6s ease;
+}
+
+.culinaria-introducao-imagem:hover img {
+    transform: scale(1.05);
+}
+
+.culinaria-introducao-conteudo {
+    flex: 1;
+}
+
+.culinaria-introducao-conteudo h2 {
+    color: #49382d;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    margin: 5px 0 25px;
+}
+
+.culinaria-introducao-conteudo p {
+    color: #81766c;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+
+/* =====================================
+   PRATOS TÍPICOS
+===================================== */
+
+.culinaria-pratos {
+    padding: 100px 10%;
+    background: #f5eee3;
+}
+
+.culinaria-pratos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.culinaria-prato-card {
+    overflow: hidden;
+    background: #fffdf9;
+    border-radius: 15px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.culinaria-prato-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(73, 56, 45, 0.12);
+}
+
+.culinaria-prato-imagem {
+    height: 240px;
+    overflow: hidden;
+}
+
+.culinaria-prato-imagem img {
+    transition: transform 0.5s ease;
+}
+
+.culinaria-prato-card:hover img {
+    transform: scale(1.06);
+}
+
+.culinaria-prato-conteudo {
+    padding: 25px;
+}
+
+.culinaria-prato-categoria {
+    display: inline-block;
+    color: #a85f3d;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.culinaria-prato-conteudo h3 {
+    color: #49382d;
+    font-size: 1.5rem;
+    margin: 0 0 12px;
+}
+
+.culinaria-prato-conteudo p {
+    color: #81766c;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =====================================
+   INFLUÊNCIAS CULTURAIS
+===================================== */
+
+.culinaria-influencias {
+    padding: 100px 10%;
+    background: #fffdf9;
+}
+
+.culinaria-influencias-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.culinaria-influencia-card {
+    text-align: center;
+    overflow: hidden;
+    background: #f5eee3;
+    border-radius: 15px;
+    padding-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culinaria-influencia-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(73, 56, 45, 0.1);
+}
+
+.culinaria-influencia-card img {
+    height: 190px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+.culinaria-influencia-card:hover img {
+    transform: scale(1.05);
+}
+
+.culinaria-influencia-card h3 {
+    color: #49382d;
+    font-size: 1.2rem;
+    margin: 0 15px 10px;
+}
+
+.culinaria-influencia-card p {
+    color: #81766c;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin: 0 18px;
+}
+
+
+/* =====================================
+   INGREDIENTES
+===================================== */
+
+.culinaria-ingredientes {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 10%;
+    background: #e9eddf;
+}
+
+.culinaria-ingredientes-conteudo {
+    flex: 1;
+}
+
+.culinaria-ingredientes-conteudo h2 {
+    color: #3e533b;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    margin: 5px 0 20px;
+}
+
+.culinaria-ingredientes-conteudo p {
+    color: #6f7967;
+    font-size: 1rem;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.culinaria-ingredientes-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+.culinaria-ingredientes-lista li {
+    color: #3e533b;
+    font-weight: 600;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.55);
+    border-radius: 8px;
+}
+
+.culinaria-ingredientes-lista li::before {
+    content: "✦";
+    color: #a85f3d;
+    margin-right: 10px;
+}
+
+.culinaria-ingredientes-imagem {
+    flex: 1;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.culinaria-ingredientes-imagem img {
+    transition: transform 0.6s ease;
+}
+
+.culinaria-ingredientes-imagem:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   BEBIDAS
+===================================== */
+
+.culinaria-bebidas {
+    padding: 100px 10%;
+    background: #fffdf9;
+}
+
+.culinaria-bebidas-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.culinaria-bebida-card {
+    overflow: hidden;
+    background: #f5eee3;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.culinaria-bebida-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(73, 56, 45, 0.1);
+}
+
+.culinaria-bebida-card img {
+    height: 240px;
+    transition: transform 0.5s ease;
+}
+
+.culinaria-bebida-card:hover img {
+    transform: scale(1.05);
+}
+
+.culinaria-bebida-card h3 {
+    color: #49382d;
+    font-size: 1.3rem;
+    margin: 22px 22px 10px;
+}
+
+.culinaria-bebida-card p {
+    color: #81766c;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    margin: 0 22px 25px;
+}
+
+
+/* =====================================
+   FINAL
+===================================== */
+
+.culinaria-final {
+    text-align: center;
+    padding: 100px 10%;
+    background: #49382d;
+}
+
+.culinaria-final .culinaria-subtitulo {
+    color: #e1ad75;
+}
+
+.culinaria-final h2 {
+    max-width: 800px;
+    margin: 10px auto 25px;
+    color: #fffdf9;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.2;
+}
+
+.culinaria-final p {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #ded2c5;
+    font-size: 1rem;
+    line-height: 1.9;
+}
+
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .culinaria-pratos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .culinaria-influencias-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .culinaria-hero,
+    .culinaria-introducao,
+    .culinaria-ingredientes {
+        gap: 35px;
+        padding: 75px 6%;
+    }
+
+    .culinaria-pratos,
+    .culinaria-influencias,
+    .culinaria-bebidas {
+        padding: 75px 6%;
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .culinaria-hero,
+    .culinaria-introducao,
+    .culinaria-ingredientes {
+        flex-direction: column;
+        padding: 60px 6%;
+    }
+
+    .culinaria-hero-imagem,
+    .culinaria-introducao-imagem,
+    .culinaria-ingredientes-imagem {
+        width: 100%;
+        height: 300px;
+    }
+
+    .culinaria-hero-conteudo,
+    .culinaria-introducao-conteudo,
+    .culinaria-ingredientes-conteudo {
+        width: 100%;
+    }
+
+    .culinaria-bebidas-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .culinaria-titulo-secao {
+        margin-bottom: 35px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .culinaria-pratos-container,
+    .culinaria-influencias-container,
+    .culinaria-bebidas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .culinaria-ingredientes-lista {
+        grid-template-columns: 1fr;
+    }
+
+    .culinaria-hero-conteudo h1 {
+        font-size: 2.5rem;
+    }
+
+    .culinaria-pratos,
+    .culinaria-influencias,
+    .culinaria-bebidas {
+        padding: 55px 5%;
+    }
+
+    .culinaria-final {
+        padding: 70px 6%;
+    }
+
+}
+
+
 /* pontos turisticos */
