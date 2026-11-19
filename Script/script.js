@@ -27,3 +27,7 @@ async function mudarCarrossel() {
         await sleep(2000);
     }
 }
+
+function virarcard(card){
+    card.classList.toggle('flip')
+}
