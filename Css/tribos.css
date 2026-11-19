@@ -20,7 +20,7 @@
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 20px;
+    gap: 30px;
     padding: 20px;
     flex-wrap: wrap;
 }
@@ -50,6 +50,21 @@ transform: translateY(-5px);
 .aruaques {
     background: #2E7D32;
 }
+.card p {
+    margin: 5px;
+    font-size: 20px;
+}
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
+.card-informacao{
+     color: #1B5E20 0%,
+    #2E7D32 35%,
+    #C62828 70%,
+    #FBC02D 100%
+}
 .aruaques h2 {
     background: green;
 }
@@ -78,9 +93,4 @@ transform: translateY(-5px);
     width: 260px;
     height: 390px;
     display: block;
-}
-.card p {
-    margin: 5px;
-    font-size: 20px;
-    font-style: bold;
 }
