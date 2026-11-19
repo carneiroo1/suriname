@@ -1,0 +1,86 @@
+#body-tribos {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #222;
+    background-color: #f5f5ed;
+    
+}
+
+#main-tribos {
+    background-color: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    padding: 0 20px;  
+    margin: 4rem 10px 10px 10px;    
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+}
+.tribos {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 350px;
+    background: #fff3cd;
+    border-radius: 20px;
+    border: 2px solid #fac905;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+.card h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 22px;
+}
+.card:hover{
+transform: translateY(-5px);
+}
+.card.flip {
+    transform: rotateY(180deg);
+}
+.aruaques {
+    background: #2E7D32;
+}
+.aruaques h2 {
+    background: green;
+}
+.aruaques:hover {
+    box-shadow: 10px 20px 30px #2E7D32;
+}
+.caraiba {
+    background: #FBC02D;
+}
+.caraiba h2 {
+    background: #FFCD00;
+}
+.caraiba:hover {
+    box-shadow: 10px 20px 30px #a37a10;
+}
+.warrius {
+    background: #C62828;
+}
+.warrius h2 {
+    background: rgb(145, 4, 4);
+}
+.warrius:hover{
+    box-shadow: 10px 20px 30px #7e0202;
+}
+.img-tribos {
+    width: 260px;
+    height: 390px;
+    display: block;
+}
+.card p {
+    margin: 5px;
+    font-size: 20px;
+    font-style: bold;
+}
