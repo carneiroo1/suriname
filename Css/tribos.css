@@ -28,6 +28,7 @@
 .card {
     width: 350px;
     background: #fff3cd;
+    min-height: 600px;
     border-radius: 20px;
     border: 2px solid #fac905;
     display: flex;
@@ -55,16 +56,32 @@ transform: translateY(-5px);
     font-size: 20px;
 }
 .card-link {
+    display: block;
     text-decoration: none;
-    color: inherit;
-    display: flex;
+    margin-top: auto;
+    padding: 10px;
+} 
+.botaoinformacao {
+    background-color: #377E3F;
+    color: white;
+    padding: 12px 18px;
+    border: 2px solid #840A2D;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    transition:all 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
-.card-informacao{
-     color: #1B5E20 0%,
-    #2E7D32 35%,
-    #C62828 70%,
-    #FBC02D 100%
+.card-link:hover .botaoinformacao {
+    background-color: #B40A2D;
+    border-color: #ECC81D;
+    box-shadow: 0 6px 15px rgba(46, 125, 50, 0.4);
+    transform: translateY(-3px);
 }
+
 .aruaques h2 {
     background: green;
 }
