@@ -1,0 +1,181 @@
+#introducao-pontos{
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255,255,255,0.9);
+    border-left: 8px solid #377E3F;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+#introducao-pontos h1{
+    text-align: center;
+    color: #377E3F;
+    margin-bottom: 15px;
+    font-size: 2.2rem;
+}
+
+#introducao-pontos p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#map{
+    height:500px;
+    width:90%;
+    margin:auto;
+    border-radius:15px;
+    border:3px solid #ECC81D;
+}
+
+#main-pontos {
+    padding: 30px;
+}
+
+#main-pontos h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.pontos-turisticos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card {
+    width: 350px;
+    min-height: 650px;
+    background: #fff3cd;
+    border-radius: 20px;
+    border: 2px solid #fac905;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2 {
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.card p {
+    font-size: 18px;
+    margin: 8px 12px;
+}
+
+.img-turismo {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-link {
+    text-decoration: none;
+    margin-top: auto;
+    padding: 10px;
+}
+
+.botaoinformacao {
+    background-color: #377E3F;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid #840A2D;
+    transition: .3s;
+}
+
+.card-link:hover .botaoinformacao {
+    background-color: #B40A2D;
+    border-color: #ECC81D;
+    transform: translateY(-3px);
+}
+
+.reserva-central h2 {
+    background-color: #2E7D32;
+}
+
+.reserva-central:hover {
+    box-shadow: 0 0 25px #2E7D32;
+}
+
+.paramaribo h2 {
+    background-color: #840A2D;
+}
+
+.paramaribo:hover {
+    box-shadow: 0 0 25px #840A2D;
+}
+
+.galibi h2 {
+    background-color: #1E88E5;
+}
+
+.galibi:hover {
+    box-shadow: 0 0 25px #1E88E5;
+}
+
+.brownsberg h2 {
+    background-color: #FF9800;
+}
+
+.brownsberg:hover {
+    box-shadow: 0 0 25px #FF9800;
+}
+
+.raleighvallen h2 {
+    background-color: #4CAF50;
+}
+
+.raleighvallen:hover {
+    box-shadow: 0 0 25px #4CAF50;
+}
+
+.zeelandia h2{
+    background:#6D4C41;
+}
+
+.zeelandia:hover{
+    box-shadow:0 10px 25px #6D4C41aa;
+}
+
+.brokopondo h2{
+    background:#00838F;
+}
+
+.brokopondo:hover{
+    box-shadow:0 10px 25px #00838Faa;
+}
+
+.braamspunt h2{
+    background:#F57C00;
+}
+
+.braamspunt:hover{
+    box-shadow:0 10px 25px #F57C00aa;
+}
+
+.footer-pontos {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer-pontos h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}

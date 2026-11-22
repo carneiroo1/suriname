@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Turísticos</title>
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/mediaquery.css">
+    <link rel="stylesheet" href="/Css/ptsturisticos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <link rel="icon" href="/img/Flag_of_Suriname.svg.webp" type="image/.webp">
+</head>
+<body>
+    <div id="header-div">
+    <header>
+        <h1 class="ubuntu-bold texto-aumenta"><a href="index.html">Suriname</a></h1>
+        <nav id="navbar">
+            <ul class="roboto-header">
+                <li><a href="tribos.html" class="texto-aumenta">Tribos</a></li>
+                <li><a href="culinaria.html" class="texto-aumenta">Culinária</a></li>
+                <li><a href="ptsturisticos.html" class="texto-aumenta">Pontos Turísticos</a></li>
+            </ul>
+        </nav>
+        <img src="/img/Flag_of_Suriname.svg.webp" alt="bandeira-suriname" id="band-sur">
+
+        <menu>
+            <img src="/img/burger-menu-svgrepo-com.svg" id="burger-menu-icon" onclick="alterarmenu()">
+        </menu>
+    </header>
+    </div>
+    <nav id="menu-nav" class="escondido">
+        <ul>
+            <li><a href="index.html" class="texto-aumenta">Home</a></li>
+            <li><a href="tribos.html" class="texto-aumenta">Tribos</a></li>
+            <li><a href="culinaria.html" class="texto-aumenta">Culinária</a></li>
+            <li><a href="ptsturiscos.html" class="texto-aumenta">Pontos Turísticos</a></li>
+        </ul>
+    </nav>
+
+    <section id="introducao-pontos">
+    <h1>Descubra as Maravilhas do Suriname</h1>
+
+    <p>
+        O Suriname é um país localizado na costa nordeste da América do Sul,
+        conhecido por sua impressionante biodiversidade, rica herança cultural
+        e paisagens naturais preservadas. Mais de 90% de seu território é
+        coberto por florestas tropicais, tornando-o um dos destinos mais
+        fascinantes para amantes da natureza e da aventura.
+    </p>
+
+    <p>
+        De reservas naturais reconhecidas pela UNESCO a cidades históricas,
+        cachoeiras, rios e praias praticamente intocadas, o Suriname oferece
+        experiências únicas para visitantes de todo o mundo. Conheça abaixo
+        alguns dos principais pontos turísticos que fazem deste país um dos
+        tesouros escondidos da América do Sul.
+    </p>
+</section>
+      
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+const mapa = L.map('map').setView([4.0, -55.5], 7);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; OpenStreetMap'
+}).addTo(mapa);
+
+L.marker([5.8520, -55.2038])
+    .addTo(mapa)
+    .bindPopup('Paramaribo');
+
+L.marker([4.933, -55.167])
+    .addTo(mapa)
+    .bindPopup('Forte Zeelandia');
+
+L.marker([5.750, -54.000])
+    .addTo(mapa)
+    .bindPopup('Galibi');
+</script>
+
+<main id="main-pontos">
+    <h2>Principais Pontos Turísticos do Suriname</h2>
+
+    <div class="pontos-turisticos">
+
+        <div class="card reserva-central">
+            <h2>Reserva Natural Central</h2>
+
+            <img src="/img/reserva-central.jpg"
+                alt="Reserva Natural Central do Suriname"
+                class="img-turismo">
+
+            <p><strong>Localização:</strong> Centro do Suriname.</p>
+
+            <p><strong>Destaque:</strong> Uma das maiores áreas protegidas da floresta amazônica.</p>
+
+            <p><strong>Fauna:</strong> Onças, antas, macacos e centenas de espécies de aves.</p>
+
+            <p><strong>Patrimônio:</strong> Reconhecida pela UNESCO como Patrimônio Mundial.</p>
+
+            <a href="https://whc.unesco.org/en/list/1017/" target="_blank" class="card-link">
+                <h3 class="botaoinformacao">Saiba Mais</h3>
+            </a>
+        </div>
+
+        <div class="card paramaribo">
+            <h2>Centro Histórico de Paramaribo</h2>
+
+            <img src="/img/paramaribo.jpg"
+                alt="Centro Histórico de Paramaribo"
+                class="img-turismo">
+
+            <p><strong>Localização:</strong> Capital do Suriname.</p>
+
+            <p><strong>Destaque:</strong> Arquitetura colonial holandesa preservada.</p>
+
+            <p><strong>Cultura:</strong> Mistura de influência europeia, africana e asiática.</p>
+
+            <p><strong>Patrimônio:</strong> Patrimônio Mundial da UNESCO.</p>
+
+            <a href="https://whc.unesco.org/en/list/940/"
+                target="_blank"
+                class="card-link">
+                <h3 class="botaoinformacao">Saiba Mais</h3>
+            </a>
+        </div>
+
+        <div class="card galibi">
+            <h2>Reserva Natural de Galibi</h2>
+
+            <img src="/img/galibi.jpg"
+                alt="Galibi"
+                class="img-turismo">
+
+            <p><strong>Localização:</strong> Costa nordeste do Suriname.</p>
+
+            <p><strong>Destaque:</strong> Área de preservação de tartarugas marinhas.</p>
+
+            <p><strong>Natureza:</strong> Praias praticamente intocadas.</p>
+
+            <p><strong>Visitação:</strong> Melhor época entre fevereiro e agosto.</p>
+
+            <a href="https://en.wikipedia.org/wiki/Galibi_Nature_Reserve"
+                target="_blank"
+                class="card-link">
+                <h3 class="botaoinformacao">Saiba Mais</h3>
+            </a>
+        </div>
+
+        <div class="card brownsberg">
+            <h2>Brownsberg Nature Park</h2>
+
+            <img src="/img/brownsberg.jpg"
+                alt="Brownsberg Nature Park"
+                class="img-turismo">
+
+            <p><strong>Localização:</strong> Distrito de Brokopondo.</p>
+
+            <p><strong>Destaque:</strong> Trilhas na floresta tropical.</p>
+
+            <p><strong>Vista:</strong> Lago Brokopondo e cachoeiras.</p>
+
+            <p><strong>Atividades:</strong> Caminhadas e observação de aves.</p>
+
+            <a href="https://en.wikipedia.org/wiki/Brownsberg_Nature_Park"
+                target="_blank"
+                class="card-link">
+                <h3 class="botaoinformacao">Saiba Mais</h3>
+            </a>
+        </div>
+
+        <div class="card raleighvallen">
+            <h2>Raleighvallen</h2>
+
+            <img src="/img/raleighvallen.jpg"
+                alt="Raleighvallen"
+                class="img-turismo">
+
+            <p><strong>Localização:</strong> Rio Coppename.</p>
+
+            <p><strong>Destaque:</strong> Corredeiras e cachoeiras impressionantes.</p>
+
+            <p><strong>Fauna:</strong> Grande diversidade de animais silvestres.</p>
+
+            <p><strong>Aventura:</strong> Passeios de barco e trilhas.</p>
+
+            <a href="https://en.wikipedia.org/wiki/Raleighvallen"
+                target="_blank"
+                class="card-link">
+                <h3 class="botaoinformacao">Saiba Mais</h3>
+            </a>
+        </div>
+
+    <div class="card zeelandia">
+     <h2>Forte Zeelandia</h2>
+
+    <img src="/img/fort-zeelandia.jpg"
+         alt="Forte Zeelandia"
+         class="img-turismo">
+
+    <p><strong>Localização:</strong> Paramaribo.</p>
+
+    <p><strong>Destaque:</strong> Fortaleza construída pelos colonizadores europeus.</p>
+
+    <p><strong>História:</strong> Um dos monumentos históricos mais importantes do país.</p>
+
+    <p><strong>Visitação:</strong> Possui museu com exposições sobre a história do Suriname.</p>
+
+    <a href="https://en.wikipedia.org/wiki/Fort_Zeelandia_(Paramaribo)"
+       target="_blank"
+       class="card-link">
+        <h3 class="botaoinformacao">Saiba Mais</h3>
+    </a>
+    </div>
+    <div class="card brokopondo">
+    <h2>Lago Brokopondo</h2>
+
+    <img src="/img/brokopondo.jpg"
+         alt="Lago Brokopondo"
+         class="img-turismo">
+
+    <p><strong>Localização:</strong> Distrito de Brokopondo.</p>
+
+    <p><strong>Destaque:</strong> Um dos maiores lagos artificiais do mundo.</p>
+
+    <p><strong>Paisagem:</strong> Árvores submersas criam cenários únicos.</p>
+
+    <p><strong>Atividades:</strong> Passeio de barco, pesca e fotografia.</p>
+
+    <a href="https://en.wikipedia.org/wiki/Brokopondo_Reservoir"
+       target="_blank"
+       class="card-link">
+        <h3 class="botaoinformacao">Saiba Mais</h3>
+    </a>
+    </div>
+     <div class="card braamspunt">
+    <h2>Praia de Braamspunt</h2>
+
+    <img src="/img/braamspunt.jpg"
+         alt="Praia de Braamspunt"
+         class="img-turismo">
+
+    <p><strong>Localização:</strong> Foz do Rio Suriname.</p>
+
+    <p><strong>Destaque:</strong> Praia selvagem acessível apenas por barco.</p>
+
+    <p><strong>Natureza:</strong> Área importante para a reprodução de tartarugas marinhas.</p>
+
+    <p><strong>Paisagem:</strong> Encontro do rio com o Oceano Atlântico.</p>
+
+    <a href="https://en.wikipedia.org/wiki/Braamspunt"
+       target="_blank"
+       class="card-link">
+        <h3 class="botaoinformacao">Saiba Mais</h3>
+    </a>
+    </div>
+  </div>
+</main>
+
+    <footer class="footer-pontos">
+    <h1>Suriname</h1>
+    <p>© 2026 Suriname. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="/Script/script.js">
+
+    </script>
+</body>
+</html>
