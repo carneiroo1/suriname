@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suriname</title>
     <link rel="stylesheet" href="/Css/style.css">
     <link rel="stylesheet" href="/Css/mediaquery.css">
-    <link rel="icon" href="/img/Flag_of_Suriname.svg.webp" type="image/.webp">
+    <link rel="icon" href="/img/Flag_of_Suriname.svg.webp" type="image/webp">
 </head>
-
 <body onload="mudarCarrossel()">
     <div id="header-div">
         <header>
@@ -21,46 +19,66 @@
                     <li><a href="ptsturisticos.html" class="texto-aumenta">Pontos Turísticos</a></li>
                 </ul>
             </nav>
-            <img src="/img/Flag_of_Suriname.svg.webp" alt="bandeira-suriname" id="band-sur">
-
+            <img src="/img/Flag_of_Suriname.svg.webp" alt="Bandeira do Suriname" id="band-sur">
             <menu>
-                <img src="/img/burger-menu-svgrepo-com.svg" id="burger-menu-icon" onclick="alterarmenu()">
+                <img src="/img/burger-menu-svgrepo-com.svg" id="burger-menu-icon" alt="Abrir menu" onclick="alterarmenu()">
             </menu>
         </header>
     </div>
+
     <nav id="menu-nav" class="escondido">
         <ul>
             <li><a href="index.html" class="texto-aumenta">Home</a></li>
             <li><a href="tribos.html" class="texto-aumenta">Tribos</a></li>
             <li><a href="culinaria.html" class="texto-aumenta">Culinária</a></li>
-            <li><a href="ptsturiscos.html" class="texto-aumenta">Pontos Turísticos</a></li>
+            <li><a href="ptsturisticos.html" class="texto-aumenta">Pontos Turísticos</a></li>
         </ul>
     </nav>
-    <main>
-        <img src="/img/Boas Vindas Suriname-Home.jpg" id="carrossel">
 
-        <section>
-            <aside>
-                <span>Bem-vindo!</span>
+    <main id="main-home">
+        <section class="home-destaque">
+            <img src="/img/Boas Vindas Suriname-Home.jpg" id="carrossel" alt="Paisagem do Suriname">
+            <div class="home-chamada">
+                <span>DESCUBRA O SURINAME</span>
                 <h2>Um país onde o mundo inteiro cabe em uma rua.</h2>
-            </aside>
-            <aside>
-                <p>
-                    Antiga colônia holandesa, o Suriname fala neerlandês oficialmente, mas nas ruas se ouve o sranan
-                    tongo, a língua que une todos os seus povos.</p>
-                <p>
-                    Entre o Atlântico e a Amazônia, faz fronteira com o Brasil, a Guiana e a Guiana Francesa.
-                </p>
-            </aside>
+                <p>Natureza exuberante, culturas diversas e histórias que se encontram em um só lugar.</p>
+            </div>
         </section>
 
-    </main>
-    <footer class="footer-pontos">
-    <h1>Suriname</h1>
-    <p>© 2026 Suriname. Todos os direitos reservados.</p>
-    </footer>
+        <section class="home-apresentacao">
+            <div class="home-texto">
+                <span class="home-etiqueta">BEM-VINDO!</span>
+                <h2>Conheça um país único na América do Sul</h2>
+                <p>
+                    Antiga colônia holandesa, o Suriname fala neerlandês oficialmente, mas nas ruas
+                    se ouve o sranan tongo, a língua que une todos os seus povos.
+                </p>
+                <p>
+                    Entre o Atlântico e a Amazônia, faz fronteira com o Brasil, a Guiana e a Guiana Francesa.
+                    Sua diversidade aparece nas paisagens, nas tradições e no cotidiano de sua população.
+                </p>
+            </div>
+            <div class="home-destaque-lateral">
+                <h3>Um encontro de culturas</h3>
+                <p>Influências indígenas, africanas, asiáticas e europeias fazem parte da identidade surinamesa.</p>
+            </div>
+        </section>
 
+        <section class="home-explorar">
+            <h2>Explore o Suriname</h2>
+            <p>Continue sua descoberta pelas páginas do nosso site.</p>
+            <div class="home-links">
+                <a href="tribos.html"><strong>Tribos</strong><span>Conheça povos originários e suas tradições.</span></a>
+                <a href="culinaria.html"><strong>Culinária</strong><span>Descubra sabores que contam histórias.</span></a>
+                <a href="ptsturisticos.html"><strong>Pontos turísticos</strong><span>Explore paisagens e lugares históricos.</span></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-pontos">
+        <h1>Suriname</h1>
+        <p>© 2026 Suriname. Todos os direitos reservados.</p>
+    </footer>
     <script src="/Script/script.js"></script>
 </body>
-
 </html>

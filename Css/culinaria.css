@@ -1,0 +1,193 @@
+/* Página de culinária - estilos isolados para não interferir nas outras páginas */
+#main-culinaria {
+    width: 100%;
+    padding-top: 25px;
+}
+
+.culinaria-introducao {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.9);
+    border-left: 8px solid #377E3F;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.culinaria-etiqueta, .culinaria-subtitulo {
+    color: #840A2D;
+    font-size: .85rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.culinaria-introducao h2 {
+    color: #2E7D32;
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin: 12px 0;
+}
+
+.culinaria-introducao p {
+    max-width: 850px;
+    margin: auto;
+    color: #333;
+    font-size: 1.12rem;
+    line-height: 1.8;
+}
+
+.culinaria-pratos, .culinaria-bebidas {
+    margin: 45px 10px;
+    padding: 30px 20px;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 20px;
+}
+
+.culinaria-titulo-secao {
+    text-align: center;
+    margin: 5px auto 30px;
+}
+
+.culinaria-titulo-secao h2 {
+    color: #2E7D32;
+    font-size: 2.2rem;
+    margin: 8px 0 12px;
+}
+
+.culinaria-titulo-secao p {
+    color: #333;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.culinaria-pratos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+}
+
+.culinaria-prato-card {
+    width: 330px;
+    min-height: 490px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: #fff3cd;
+    border: 2px solid #fac905;
+    border-radius: 20px;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.culinaria-prato-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(46,125,50,.3);
+}
+
+.culinaria-prato-imagem {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+}
+
+.culinaria-prato-imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .4s;
+}
+
+.culinaria-prato-card:hover .culinaria-prato-imagem img {
+    transform: scale(1.06);
+}
+
+.culinaria-prato-conteudo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.culinaria-prato-categoria {
+    color: #840A2D;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.culinaria-prato-conteudo h3 {
+    color: #2E7D32;
+    font-size: 1.55rem;
+    margin: 8px 0;
+}
+
+.culinaria-prato-conteudo p {
+    color: #222;
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+.culinaria-bebidas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.culinaria-bebida-card {
+    width: 330px;
+    overflow: hidden;
+    background: #fff3cd;
+    border: 2px solid #fac905;
+    border-radius: 18px;
+    transition: transform .3s, box-shadow .3s;
+}
+
+.culinaria-bebida-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(46,125,50,.28);
+}
+
+.culinaria-bebida-card img {
+    display: block;
+    width: 100%;
+    height: 205px;
+    object-fit: cover;
+}
+
+.culinaria-bebida-card div {
+    padding: 18px;
+}
+
+.culinaria-bebida-card h3 {
+    color: #2E7D32;
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+}
+
+.culinaria-bebida-card p {
+    color: #222;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .culinaria-introducao {
+        margin: 25px 10px;
+        padding: 22px;
+    }
+    .culinaria-pratos, .culinaria-bebidas {
+        margin: 25px 5px;
+        padding: 22px 12px;
+    }
+    .culinaria-prato-card, .culinaria-bebida-card {
+        width: min(100%, 420px);
+    }
+    .culinaria-titulo-secao h2 {
+        font-size: 1.8rem;
+    }
+}

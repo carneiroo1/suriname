@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,204 +7,137 @@
     <link rel="stylesheet" href="/Css/style.css">
     <link rel="stylesheet" href="/Css/mediaquery.css">
     <link rel="stylesheet" href="/Css/culinaria.css">
-    <link rel="icon" href="/img/Flag_of_Suriname.svg.webp" type="image/.webp">
+    <link rel="icon" href="/img/Flag_of_Suriname.svg.webp" type="image/webp">
 </head>
 <body>
-<div id="header-div">
-    <header>
-        <h1 class="ubuntu-bold texto-aumenta"><a href="index.html">Suriname</a></h1>
-        <nav id="navbar">
-            <ul class="roboto-header">
-                <li><a href="tribos.html" class="texto-aumenta">Tribos</a></li>
-                <li><a href="culinaria.html" class="texto-aumenta">Culinária</a></li>
-                <li><a href="ptsturisticos.html" class="texto-aumenta">Pontos Turísticos</a></li>
-            </ul>
-        </nav>
-        <img src="/img/Flag_of_Suriname.svg.webp" alt="bandeira-suriname" id="band-sur">
-
-        <menu>
-            <img src="/img/burger-menu-svgrepo-com.svg" id="burger-menu-icon" onclick="alterarmenu()">
-        </menu>
-    </header>
+    <div id="header-div">
+        <header>
+            <h1 class="ubuntu-bold texto-aumenta"><a href="index.html">Suriname</a></h1>
+            <nav id="navbar">
+                <ul class="roboto-header">
+                    <li><a href="tribos.html" class="texto-aumenta">Tribos</a></li>
+                    <li><a href="culinaria.html" class="texto-aumenta">Culinária</a></li>
+                    <li><a href="ptsturisticos.html" class="texto-aumenta">Pontos Turísticos</a></li>
+                </ul>
+            </nav>
+            <img src="/img/Flag_of_Suriname.svg.webp" alt="Bandeira do Suriname" id="band-sur">
+            <menu>
+                <img src="/img/burger-menu-svgrepo-com.svg" id="burger-menu-icon" alt="Abrir menu" onclick="alterarmenu()">
+            </menu>
+        </header>
     </div>
+
     <nav id="menu-nav" class="escondido">
         <ul>
             <li><a href="index.html" class="texto-aumenta">Home</a></li>
             <li><a href="tribos.html" class="texto-aumenta">Tribos</a></li>
             <li><a href="culinaria.html" class="texto-aumenta">Culinária</a></li>
-            <li><a href="ptsturiscos.html" class="texto-aumenta">Pontos Turísticos</a></li>
+            <li><a href="ptsturisticos.html" class="texto-aumenta">Pontos Turísticos</a></li>
         </ul>
     </nav>
 
-    <main>
-        <!-- PRATOS TÍPICOS -->
+    <main id="main-culinaria">
+        <section class="culinaria-introducao">
+            <span class="culinaria-etiqueta">SABORES E TRADIÇÕES</span>
+            <h2>Uma mistura de culturas à mesa</h2>
+            <p>
+                A culinária do Suriname reflete a diversidade de seu povo. Influências indígenas,
+                africanas, indianas, javanesas, chinesas e europeias se encontram em receitas
+                preparadas com ingredientes locais, temperos marcantes e muita tradição.
+            </p>
+        </section>
+
         <section class="culinaria-pratos" id="pratos">
             <div class="culinaria-titulo-secao">
                 <span class="culinaria-subtitulo">GASTRONOMIA LOCAL</span>
                 <h2>Pratos típicos</h2>
-                <p>
-                    Conheça algumas das receitas mais conhecidas
-                    e apreciadas no Suriname.
-                </p>
+                <p>Conheça algumas das receitas mais conhecidas e apreciadas no Suriname.</p>
             </div>
+
             <div class="culinaria-pratos-container">
-                <!-- POM -->
                 <article class="culinaria-prato-card">
-                    <div class="culinaria-prato-imagem">
-                        <img src="imagens/pom.jpg" alt="Pom surinamês">
-                    </div>
+                    <div class="culinaria-prato-imagem"><img src="/imagens/pom.jpg" alt="Pom surinamês"></div>
                     <div class="culinaria-prato-conteudo">
-                        <span class="culinaria-prato-categoria">
-                            TRADICIONAL
-                        </span>
+                        <span class="culinaria-prato-categoria">TRADICIONAL</span>
                         <h3>Pom</h3>
-                        <p>
-                            Um dos pratos mais famosos do Suriname.
-                            É preparado com raiz de pomtajer ralada,
-                            frango, temperos e suco cítrico, sendo
-                            assado até ficar dourado.
-                        </p>
+                        <p>Um dos pratos mais famosos do Suriname. É preparado com raiz de pomtajer ralada, frango, temperos e suco cítrico, sendo assado até ficar dourado.</p>
                     </div>
                 </article>
-                <!-- ROTI -->
+
                 <article class="culinaria-prato-card">
-                    <div class="culinaria-prato-imagem">
-                        <img src="imagens/roti.jpg" alt="Roti com curry">
-                    </div>
+                    <div class="culinaria-prato-imagem"><img src="/imagens/roti.jpg" alt="Roti com curry"></div>
                     <div class="culinaria-prato-conteudo">
-                        <span class="culinaria-prato-categoria">
-                            INFLUÊNCIA INDIANA
-                        </span>
+                        <span class="culinaria-prato-categoria">INFLUÊNCIA INDIANA</span>
                         <h3>Roti</h3>
-                        <p>
-                            Pão achatado tradicionalmente servido
-                            com curry, frango, batatas e vegetais.
-                            É uma refeição muito popular no país.
-                        </p>
+                        <p>Pão achatado tradicionalmente servido com curry, frango, batatas e vegetais. É uma refeição muito popular no país.</p>
                     </div>
                 </article>
-                <!-- SAOTO -->
+
                 <article class="culinaria-prato-card">
-                    <div class="culinaria-prato-imagem">
-                        <img src="imagens/saoto.jpg" alt="Sopa Saoto">
-                    </div>
+                    <div class="culinaria-prato-imagem"><img src="/imagens/saoto.jpg" alt="Sopa Saoto"></div>
                     <div class="culinaria-prato-conteudo">
-                        <span class="culinaria-prato-categoria">
-                            INFLUÊNCIA JAVANESA
-                        </span>
+                        <span class="culinaria-prato-categoria">INFLUÊNCIA JAVANESA</span>
                         <h3>Saoto</h3>
-                        <p>
-                            Uma sopa aromática de origem javanesa,
-                            geralmente preparada com caldo de frango,
-                            brotos de feijão, batata e outros acompanhamentos.
-                        </p>
+                        <p>Uma sopa aromática de origem javanesa, geralmente preparada com caldo de frango, brotos de feijão, batata e outros acompanhamentos.</p>
                     </div>
                 </article>
-                <!-- MOKSI ALESI -->
+
                 <article class="culinaria-prato-card">
-
-                    <div class="culinaria-prato-imagem">
-                        <img src="imagens/moksi-alesi.jpg"
-                             alt="Moksi Alesi">
-                    </div>
-
+                    <div class="culinaria-prato-imagem"><img src="/imagens/moksi-alesi.jpg" alt="Moksi Alesi"></div>
                     <div class="culinaria-prato-conteudo">
-                        <span class="culinaria-prato-categoria">
-                            INFLUÊNCIA AFRO-SURINAMESA
-                        </span>
+                        <span class="culinaria-prato-categoria">INFLUÊNCIA AFRO-SURINAMESA</span>
                         <h3>Moksi Alesi</h3>
-                        <p>
-                            Prato de arroz cozido com diferentes
-                            ingredientes, como carnes, peixe,
-                            vegetais e temperos.
-                        </p>
+                        <p>Prato de arroz cozido com diferentes ingredientes, como carnes, peixe, vegetais e temperos.</p>
                     </div>
+                </article>
 
-                </article>
-                <!-- BARA -->
                 <article class="culinaria-prato-card">
-                    <div class="culinaria-prato-imagem">
-                        <img src="imagens/bara.jpg" alt="Bara surinamês">
-                    </div>
+                    <div class="culinaria-prato-imagem"><img src="/imagens/bara.jpg" alt="Bara surinamês"></div>
                     <div class="culinaria-prato-conteudo">
-                        <span class="culinaria-prato-categoria">
-                            INFLUÊNCIA INDIANA
-                        </span>
+                        <span class="culinaria-prato-categoria">INFLUÊNCIA INDIANA</span>
                         <h3>Bara</h3>
-                        <p>
-                            Um bolinho frito feito com farinha de
-                            ervilha partida ou lentilha, ervas e
-                            especiarias. É muito consumido como lanche.
-                        </p>
+                        <p>Um bolinho frito feito com farinha de ervilha partida ou lentilha, ervas e especiarias. É muito consumido como lanche.</p>
                     </div>
                 </article>
-                <!-- TELO -->
+
                 <article class="culinaria-prato-card">
-                    <div class="culinaria-prato-imagem">
-                        <img src="imagens/telo.jpg" alt="Telo com peixe">
-                    </div>
+                    <div class="culinaria-prato-imagem"><img src="/imagens/telo.jpg" alt="Telo com peixe"></div>
                     <div class="culinaria-prato-conteudo">
-                        <span class="culinaria-prato-categoria">
-                            INFLUÊNCIA INDONÉSIA
-                        </span>
+                        <span class="culinaria-prato-categoria">INFLUÊNCIA INDONÉSIA</span>
                         <h3>Telo</h3>
-                        <p>
-                            Mandioca cozida ou frita, frequentemente
-                            acompanhada de peixe salgado e molhos
-                            apimentados.
-                        </p>
+                        <p>Mandioca cozida ou frita, frequentemente acompanhada de peixe salgado e molhos apimentados.</p>
                     </div>
                 </article>
             </div>
-        <!-- BEBIDAS -->
+        </section>
+
         <section class="culinaria-bebidas">
             <div class="culinaria-titulo-secao">
                 <span class="culinaria-subtitulo">PARA ACOMPANHAR</span>
                 <h2>Bebidas tradicionais</h2>
-                <p>
-                    Bebidas refrescantes e preparações que também
-                    fazem parte dos hábitos alimentares do país.
-                </p>
+                <p>Bebidas refrescantes e preparações que também fazem parte dos hábitos alimentares do país.</p>
             </div>
             <div class="culinaria-bebidas-container">
                 <article class="culinaria-bebida-card">
-                    <img src="imagens/dawet.jpg" alt="Bebida Dawet">
-                    <h3>Dawet</h3>
-                    <p>
-                        Bebida de influência javanesa, geralmente
-                        preparada com leite de coco, açúcar e
-                        elementos aromatizados.
-                    </p>
+                    <img src="/imagens/dawet.jpg" alt="Bebida Dawet">
+                    <div><h3>Dawet</h3><p>Bebida de influência javanesa, geralmente preparada com leite de coco, açúcar e elementos aromatizados.</p></div>
                 </article>
                 <article class="culinaria-bebida-card">
-                    <img src="imagens/ginger-beer.jpg"
-                         alt="Bebida de gengibre">
-                    <h3>Ginger Beer</h3>
-                    <p>
-                        Bebida de gengibre, com sabor marcante
-                        e frequentemente preparada de maneira
-                        artesanal.
-                    </p>
+                    <img src="/imagens/ginger-beer.jpg" alt="Bebida de gengibre">
+                    <div><h3>Ginger Beer</h3><p>Bebida de gengibre, com sabor marcante e frequentemente preparada de maneira artesanal.</p></div>
                 </article>
                 <article class="culinaria-bebida-card">
-                    <img src="imagens/sucos-tropicais.jpg"
-                         alt="Sucos de frutas tropicais">
-                    <h3>Sucos tropicais</h3>
-                    <p>
-                        Bebidas preparadas com frutas como maracujá,
-                        manga e outras frutas tropicais.
-                    </p>
+                    <img src="/imagens/sucos-tropicais.jpg" alt="Sucos de frutas tropicais">
+                    <div><h3>Sucos tropicais</h3><p>Bebidas preparadas com frutas como maracujá, manga e outras frutas tropicais.</p></div>
                 </article>
             </div>
         </section>
     </main>
 
     <footer class="footer-pontos">
-    <h1>Suriname</h1>
-    <p>© 2026 Suriname. Todos os direitos reservados.</p>
+        <h1>Suriname</h1>
+        <p>© 2026 Suriname. Todos os direitos reservados.</p>
     </footer>
-    <script src="/Script/script.js">
-
-    </script>
+    <script src="/Script/script.js"></script>
 </body>
 </html>
