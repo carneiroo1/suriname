@@ -17,7 +17,7 @@ let imagens = [
     "/img/carrossel-2.avif",
     "/img/carrossel-3.jpg"
 ];
-
+    
 let indiceAtual = 0;
 let intervalo;
 
