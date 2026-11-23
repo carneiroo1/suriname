@@ -49,13 +49,54 @@ header {
     width: 75%;
     border-radius: 100px;
     padding: 10px 20px 10px 20px;
-    display: grid;
-    grid-template-columns: 2fr 5fr 3fr;
+    display: flex;
     align-items: center;
     align-content: center;
     justify-items: center;
-    gap: 1rem;
+    justify-content: space-between;
     height: 7vh;
+}
+
+.carrossel-container {
+    position: relative;
+}
+
+.carrossel-botoes {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    gap: 12px;
+}
+
+.carrossel-botoes input {
+    display: none;
+}
+
+.carrossel-botoes label {
+    width: 13px;
+    height: 13px;
+
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid white;
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: .3s;
+}
+
+.carrossel-botoes input:checked + label {
+    background-color: white;
+    transform: scale(1.25);
+}
+
+.divisor {
+  grid-column: 1 / -1; /* ocupa da primeira à última coluna */
+  grid-row: 2;       /* fica exatamente na fileira do meio */
+  background-color: #2E7D32;
+  transform: scaleY(0.5); 
 }
 
 header h1 a {

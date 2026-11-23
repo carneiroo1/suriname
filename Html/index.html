@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="/Css/mediaquery.css">
     <link rel="icon" href="/img/Flag_of_Suriname.svg.webp" type="image/webp">
 </head>
+
 <body onload="mudarCarrossel()">
     <div id="header-div">
         <header>
@@ -21,7 +23,8 @@
             </nav>
             <img src="/img/Flag_of_Suriname.svg.webp" alt="Bandeira do Suriname" id="band-sur">
             <menu>
-                <img src="/img/burger-menu-svgrepo-com.svg" id="burger-menu-icon" alt="Abrir menu" onclick="alterarmenu()">
+                <img src="/img/burger-menu-svgrepo-com.svg" id="burger-menu-icon" alt="Abrir menu"
+                    onclick="alterarmenu()">
             </menu>
         </header>
     </div>
@@ -30,6 +33,7 @@
         <ul>
             <li><a href="index.html" class="texto-aumenta">Home</a></li>
             <li><a href="tribos.html" class="texto-aumenta">Tribos</a></li>
+            <div class="divisor"></div>
             <li><a href="culinaria.html" class="texto-aumenta">Culinária</a></li>
             <li><a href="ptsturisticos.html" class="texto-aumenta">Pontos Turísticos</a></li>
         </ul>
@@ -37,7 +41,25 @@
 
     <main id="main-home">
         <section class="home-destaque">
-            <img src="/img/Boas Vindas Suriname-Home.jpg" id="carrossel" alt="Paisagem do Suriname">
+            <div class="carrossel-container">
+
+                <img src="/img/carrossel-1.jpg" id="carrossel" alt="Suriname">
+
+                <div class="carrossel-botoes">
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <label for="slide1"></label>
+
+                    <input type="radio" name="slide" id="slide2">
+                    <label for="slide2"></label>
+
+                    <input type="radio" name="slide" id="slide3">
+                    <label for="slide3"></label>
+
+                    <input type="radio" name="slide" id="slide4">
+                    <label for="slide4"></label>
+                </div>
+
+            </div>
             <div class="home-chamada">
                 <span>DESCUBRA O SURINAME</span>
                 <h2>Um país onde o mundo inteiro cabe em uma rua.</h2>
@@ -68,9 +90,12 @@
             <h2>Explore o Suriname</h2>
             <p>Continue sua descoberta pelas páginas do nosso site.</p>
             <div class="home-links">
-                <a href="tribos.html"><strong>Tribos</strong><span>Conheça povos originários e suas tradições.</span></a>
-                <a href="culinaria.html"><strong>Culinária</strong><span>Descubra sabores que contam histórias.</span></a>
-                <a href="ptsturisticos.html"><strong>Pontos turísticos</strong><span>Explore paisagens e lugares históricos.</span></a>
+                <a href="tribos.html"><strong>Tribos</strong><span>Conheça povos originários e suas
+                        tradições.</span></a>
+                <a href="culinaria.html"><strong>Culinária</strong><span>Descubra sabores que contam
+                        histórias.</span></a>
+                <a href="ptsturisticos.html"><strong>Pontos turísticos</strong><span>Explore paisagens e lugares
+                        históricos.</span></a>
             </div>
         </section>
     </main>
@@ -81,4 +106,5 @@
     </footer>
     <script src="/Script/script.js"></script>
 </body>
+
 </html>
