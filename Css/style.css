@@ -105,8 +105,8 @@ header {
 }
 
 .divisor {
-  grid-column: 1 / -1; /* ocupa da primeira à última coluna */
-  grid-row: 2;       /* fica exatamente na fileira do meio */
+  grid-column: 1 / -1; 
+  grid-row: 2;       
   background-color: #2E7D32;
   transform: scaleY(0.5); 
 }
@@ -191,7 +191,6 @@ footer {
 }
 
 
-/* HOME - estilos exclusivos da página inicial */
 #main-home {
     width: 100%;
     padding-top: 20px;
