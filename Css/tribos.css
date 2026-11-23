@@ -35,7 +35,7 @@
     text-align: center;
     font-size: 22px;
     padding: 15px;
-    border-radius: 22px;
+    border-radius:9px;
 }
 .card:hover{
 transform: translateY(-5px);
@@ -72,7 +72,7 @@ transform: translateY(-5px);
 }
 
 .aruaques {
-    background: #2E7D32;
+    background: #fff3cd;
 }
 .aruaques h2 {
     background: green;
@@ -81,7 +81,7 @@ transform: translateY(-5px);
     box-shadow: 10px 20px 30px #2E7D32;
 }
 .caraiba {
-    background: #FBC02D;
+    background: #fff3cd;
 }
 .caraiba h2 {
     background: #FFCD00;
@@ -90,7 +90,7 @@ transform: translateY(-5px);
     box-shadow: 10px 20px 30px #a37a10;
 }
 .warrius {
-    background: #C62828;
+    background: #fff3cd;
 }
 .warrius h2 {
     background: rgb(145, 4, 4);
@@ -101,7 +101,7 @@ transform: translateY(-5px);
 .img-tribos {
     width: 260px;
     height: 390px;
-    display: block;
+    align-self: center;
 }
 
 .p {
